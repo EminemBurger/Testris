@@ -6,7 +6,7 @@
 
 This program is an implementation of the famous game Tetris. The programming language used the C.
 
-The full code can be found in Tetris.c.
+The full code can be found in tetris.c.
 
 
 ![myImage](https://media.giphy.com/media/9QTItsh5OBrPgyXO2y/giphy.gif)
