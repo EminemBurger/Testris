@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+	int key;
+	int i = 0;
+
+	while (1)
+	{
+		if (kbhit())
+		{
+			key = getch();
+			if (key == 224 || key == 0)
+			{
+				key = getch();
+				switch (key)
+				{
+				case 72:
+					printf("¡è\n");
+					break;
+				case 75:
+					printf("¡ç\n");
+					break;
+				case 77:
+					printf("¡æ\n");
+					break;
+				case 80:
+					printf("¡é\n");
+					break;
+				default:
+					break;
+				}
+			}
+			else
+			{
+				if (key == 13)
+					printf("Enter\n");
+				else if (key == 32)
+					printf("Space\n");
+				else if (key == 27)
+					printf("ESC\n");
+				else
+					printf("³ªµµ ¸ô¸¦¿ä~\n");
+			}
+		}
+	}
+	return 0;
+}

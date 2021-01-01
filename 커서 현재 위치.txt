@@ -1,0 +1,9 @@
+COORD getXY()
+{
+	COORD Cur;
+	CONSOLE_SCREEN_BUFFER_INFO a;
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &a);
+	Cur.X = a.dwCursorPosition.X;
+	Cur.Y = a.dwCursorPosition.Y;
+	return Cur;
+}
